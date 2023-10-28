@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="dragApi.js" defer></script>
+    <script src="todo.js" defer></script>
+</head>
+<body>
+    <div class="board">
+        <form id="todo-form">
+          <input type="text" placeholder="Nova tarefa..." id="todo-input" />
+          <button type="submit">Add +</button>
+        </form>
+      
+        <div class="lanes">
+          <div class="swim-lane" id="todo-lane">
+            <h3 class="heading">A Fazer</h3>
+          </div>
+      
+          <div class="swim-lane" id="todo-lane">
+            <h3 class="heading">Em Andamento</h3>
+          </div>
+      
+          <div class="swim-lane" id="todo-lane">
+            <h3 class="heading">Concluído</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
